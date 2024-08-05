@@ -37,7 +37,7 @@ See [Docs](https://nonebot.dev/)
 
 5.在Bot文件夹打开终端,输入**nb plugin install nonebot_plugin_alconna**
 
-6.打开文件夹中的**pyproject.toml**,修改其中的:
+6.打开文件夹中的**pyproject.yaml**,修改其中的:
 **plugins_dir=["plugins"]**
 然后在文件夹中创建名为**plugins**的文件夹
 
