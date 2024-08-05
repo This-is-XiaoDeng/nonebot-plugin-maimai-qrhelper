@@ -56,8 +56,11 @@ nb plugin install nonebot_plugin_alconna
 
 ## 指令
 `getqr` 默认`qrhelper_command`指令
+
 必须填写`qrhelper_admin`才能拥有权限使用此指令
+
 必须填写`command_start`才能响应此命令
+
 比如`#getqr 1`
 
 **~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**
