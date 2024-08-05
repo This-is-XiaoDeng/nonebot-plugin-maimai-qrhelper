@@ -25,16 +25,24 @@ See [Docs](https://nonebot.dev/)
 
 ## How 2 use?
 1.根据[Nonebot快速上手](https://nonebot.dev/docs/quick-start)安装Nonebot脚手架
+
 2.驱动器选择:**fastapi**,**httpx**
 (如需正向ws请添加**websockets**)
+
 3.适配器选择:**Onebot V11**
+
 4.依赖/虚拟环境全部写***y***然后回车
+
 5.在Bot文件夹打开终端,输入**nb plugin install nonebot_plugin_alconna**
+
 6.打开文件夹中的**pyproject.yaml**,修改其中的:
 **plugins_dir=["plugins"]**
 然后在文件夹中创建名为**plugins**的文件夹
+
 7.放入本仓库的**nonebot_plugin_maimai_helper**到**plugins**里
+
 8.回到根目录,填写**env.prod**变量信息,填写完后,打开终端,输入**nb run**打开Bot
+
 9.大功告成！
 
 ## 指令
