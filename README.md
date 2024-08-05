@@ -20,7 +20,7 @@ See [Docs](https://nonebot.dev/)
 ```python
 qrhelper_get_picurl=["http://127.0.0.1:16643/get-qr"]
 
-# 可多个填写,用','分割,递进顺序为1,2,3,4......
+# 墓前只可填写一个，指令预设值为#getqr 1
 
 qrhelper_admin=[""]
 
@@ -58,7 +58,7 @@ nb plugin install nonebot_plugin_alconna
 `getqr` 默认`qrhelper_command`指令
 必须填写`qrhelper_admin`才能拥有权限使用此指令
 必须填写`command_start`才能响应此命令
-比如`#getqr 1/2/3/4`等 
+比如`#getqr 1`
 
 **~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**
 
