@@ -61,7 +61,7 @@ nb plugin install nonebot_plugin_alconna
 
 必须填写`command_start`才能响应此命令
 
-比如`#getqr 1`
+指令示例`#getqr 1`
 
 **~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**
 
