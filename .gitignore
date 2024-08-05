@@ -2,6 +2,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
+.pdm-python
 nonebot_plugin_maimai_qrhelper.egg-info/
 
 ### Python ###
