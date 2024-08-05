@@ -32,6 +32,7 @@ qehelper_command=[""]
 1.根据[Nonebot快速上手](https://nonebot.dev/docs/quick-start)安装Nonebot脚手架
 
 2.驱动器选择:`fastapi`,`httpx`
+
 (如需正向ws请添加`websockets`)
 
 3.适配器选择: `Onebot V11`
