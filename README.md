@@ -43,4 +43,6 @@ See [Docs](https://nonebot.dev/)
 必须填写**command_start**才能响应此命令
 比如 #getqr 1/2/3/4等 
 
-**~~我承认我MarkDown写的很烂，见谅！！！~~**
+**~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**
+
+此仓库遵循**MIT**开源协议
