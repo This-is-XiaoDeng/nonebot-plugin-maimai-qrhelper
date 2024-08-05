@@ -1,7 +1,9 @@
 # nonebot-plugin-maimai-qrhelper
 
 ***~~实际上这就是一个图片获取插件,但大家就当他是一个能让Bot快捷获取登录二维码图片的插件吧！(bushi)~~***
+
 服务端提供者为[Cdm2883](https://github.com/Cdm2883/)
+
 [BiliBili原视频](https://bilibili.com/BV1kT421r74M)
 
 ## Documentation
