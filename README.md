@@ -45,4 +45,6 @@ See [Docs](https://nonebot.dev/)
 
 **~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**
 
+## LICENSE
+
 此仓库遵循**MIT**开源协议
