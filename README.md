@@ -36,6 +36,9 @@ qehelper_command=[""]
 ```
 
 ## How 2 use?
+
+**此教程只讲述Onebot-V11适配器的安装**
+
 1.根据[Nonebot快速上手](https://nonebot.dev/docs/quick-start)安装Nonebot脚手架
 
 2.驱动器选择:`fastapi`,`httpx`
