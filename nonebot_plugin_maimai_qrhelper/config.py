@@ -6,7 +6,9 @@ class Config(BaseModel):
     """Plugin Config Here"""
     qrhelper_get_picurl: list[str]
     qrhelper_admin: list[str]
-    qehelper_command: list[str] = "getqr"
+    qrhelper_command: list[str] = "getqr"
+    allow_group_sendqr: bool = False
+    send_qr_msg: bool = False
 
 
 config = get_plugin_config(Config)
