@@ -16,6 +16,11 @@
 
 See [Docs](https://nonebot.dev/)
 
+## 优点
+
+MaiMai服务端没有鉴权，因此可以通过Bot代发送图片避免地址的泄露，不需要开放公网端口！
+(我的Java技术栈朋友很少，所以出现了这个插件）
+
 ## env.prod变量
 **必须**`command_start=[""]`
 
@@ -71,4 +76,4 @@ README modified by [chun-awa](https://github.com/chun-awa), lol
 
 ## LICENSE
 
-此仓库遵循MIT开源协议
+此仓库遵循~~麻省理工学院许可证~~(MIT)开源协议
