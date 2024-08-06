@@ -8,6 +8,8 @@
 
 [BiliBili原视频](https://bilibili.com/BV1kT421r74M)
 
+**↑你需要观看视频简介获取服务端**
+
 **此插件只能用于私聊，群聊无法获取图片(安全原因)**
 
 ## Documentation
