@@ -1,28 +1,24 @@
 # nonebot-plugin-maimai-qrhelper
-
 **~~实际上这就是一个图片获取插件,但大家就当他是一个能让Bot快捷获取登录二维码图片的插件吧！(bushi)~~**
 
 此插件的灵感来源于[LeiSureLy](https://github.com/LeiSureLyYrsc),由我的好大爹[XiaoDeng](https://github.com/This-is-XiaoDeng/)替我编写了此Nonebot插件！
 
 服务端提供者为[Cdm2883](https://github.com/Cdm2883/)大佬！
 
-[BiliBili原视频](https://bilibili.com/BV1kT421r74M)
+BiliBili原视频: <https://bilibili.com/BV1kT421r74M>, 观看视频简介获取服务端
 
-**↑你需要观看视频简介获取服务端**
-
-**此插件只能用于私聊，群聊无法获取图片(安全原因)**
+> [!IMPORTANT]
+> 此插件只能用于私聊，群聊无法获取图片(安全原因)
 
 ## Documentation
-
 See [Docs](https://nonebot.dev/)
 
 ## 优点
-
 MaiMai服务端没有鉴权，因此可以通过Bot代发送图片避免地址的泄露，不需要开放公网端口！
 (我的Java技术栈朋友很少，所以出现了这个插件）
 
 ## env.prod变量
-**必须**`command_start=[""]`
+必须为`command_start=[""]`
 
 ```python
 qrhelper_get_picurl=["http://127.0.0.1:16643/get-qr"]
@@ -36,12 +32,12 @@ qehelper_command=[""]
 ```
 
 ## How 2 use?
-
-**此教程只讲述Onebot-V11适配器的安装**
+> [!NOTE]
+> 此教程只讲述Onebot-V11适配器的安装
 
 1.根据[Nonebot快速上手](https://nonebot.dev/docs/quick-start)安装Nonebot脚手架
 
-2.驱动器选择:`fastapi`,`httpx`
+2.驱动器选择:`fastapi`, `httpx`
 
 (如需正向ws请添加`websockets`)
 
@@ -50,7 +46,7 @@ qehelper_command=[""]
 4.依赖/虚拟环境全部写`y`然后回车
 
 5.在Bot文件夹打开终端,输入
-```
+```bash
 nb plugin install nonebot_plugin_alconna
 ```
 
@@ -73,10 +69,7 @@ nb plugin install nonebot_plugin_alconna
 
 指令示例`#getqr 1`
 
-**~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**
-
-README modified by [chun-awa](https://github.com/chun-awa), lol
+**~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**(README modified by [chun-awa](https://github.com/chun-awa))
 
 ## LICENSE
-
-此仓库遵循~~麻省理工学院许可证~~(MIT)开源协议
+This repository is licensed under [MIT License](https://github.com/This-is-XiaoDeng/nonebot-plugin-maimai-qrhelper/blob/main/LICENSE).
