@@ -3,7 +3,7 @@ name = "nonebot-plugin-maimai-qrhelper"
 version = "0.1.0"
 description = "nonebot-plugin-maimai-qrhelper"
 readme = "README.md"
-requires-python = ">=3.8, <4.0"
+requires-python = ">=3.9, <4.0"
 dependencies = [
     "nonebot-adapter-onebot>=2.4.3",
     "nonebot2[fastapi]>=2.2.1",
@@ -11,14 +11,16 @@ dependencies = [
     "nonebot-plugin-alconna>=0.42.4",
     "pyzbar>=0.1.9",
     "pillow>=10.4.0",
+    "websockets>=14.2",
+    "nb-cli>=1.4.2",
 ]
 
 [tool.nonebot]
 adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" }
 ]
-plugins = ["nonebot_plugin_maimai_qrhelper"]
-plugin_dirs = []
+plugins = []
+plugin_dirs = ["plugins"]
 builtin_plugins = []
 
 [tool.pdm]
