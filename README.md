@@ -5,71 +5,92 @@
 
 服务端提供者为[Cdm2883](https://github.com/Cdm2883/)大佬！
 
-BiliBili原视频: <https://bilibili.com/BV1kT421r74M>, 观看视频简介获取服务端
+服务端/客户端下载地址:[MaimaiHelper](https://github.com/SomeUtils/MaimaiHelper)
+
+BiliBili原视频(旧): <https://bilibili.com/BV1kT421r74M>
 
 > [!IMPORTANT]
 > 此插件只能用于私聊，群聊无法获取图片(安全原因)
 
-## Documentation
-See [Docs](https://nonebot.dev/)
-
 ## 优点
-MaiMai服务端没有鉴权，因此可以通过Bot代发送图片避免地址的泄露，不需要开放公网端口！
+~~MaiMai服务端没有鉴权，因此可以通过Bot代发送图片避免地址的泄露，不需要开放公网端口！~~
 (我的Java技术栈朋友很少，所以出现了这个插件）
 
+通过向机器人发送指令快捷获取登录二维码图片，是给亲人好友帮忙签到，在没有微信上的手机出勤的有力插件！
+
 ## env.prod变量
-必须为`command_start=[""]`
+自由配置`command_start=[""]`
 
-```python
-qrhelper_get_picurl=["http://127.0.0.1:16643/get-qr"]
+```env.prod
+DRIVER=~fastapi+~websockets+~httpx
 
-# 墓前只可填写一个，指令预设值为#getqr 1
+#二维码获取地址
+qrhelper_get_picurl=["http://127.0.0.1:16643/maimaihelper?token=DO_NOT_USE_DEFAULT_TOKEN"]
 
-qrhelper_admin=[""]
+#插件主人 只接受来自"123456"的命令
+qrhelper_admin=["123456"]
 
-# 默认getqr
-qehelper_command=[""]
+#反向ws地址/端口配置
+HOST=0.0.0.0
+PORT=8080
+
+#可选正向ws
+#ONEBOT_WS_URLS=["ws://127.0.0.1:6700"]
 ```
 
 ## How 2 use?
 > [!NOTE]
 > 此教程只讲述Onebot-V11适配器的安装
 
-1.根据[Nonebot快速上手](https://nonebot.dev/docs/quick-start)安装Nonebot脚手架
+#### 全自动操作（或许吧）-仅限Windows
 
-2.驱动器选择:`fastapi`, `httpx`
+按顺序点击1 2 3脚本，然后完事
 
-(如需正向ws请添加`websockets`)
+#### 手动操作
 
-3.适配器选择: `Onebot V11`
+1.克隆此仓库
 
-4.依赖/虚拟环境全部写`y`然后回车
-
-5.在Bot文件夹打开终端,输入
-```bash
-nb plugin install nonebot_plugin_alconna
+```git
+git clone https://github.com/This-is-XiaoDeng/nonebot-plugin-maimai-qrhelper
 ```
 
-6.打开文件夹中的`pyproject.yaml`,修改其中的:
-`plugins_dir=["plugins"]`
-然后在文件夹中创建名为`plugins`的文件夹
+2.在cmd输入以下指令安装pdm包管理工具
 
-7.放入本仓库的`nonebot_plugin_maimai_helper`到`plugins`里
+```命令提示符(?)
+pip install pdm
+```
 
-8.回到根目录,填写`env.prod`变量信息,填写完后,打开终端,输入`nb run`打开Bot
+若下载超时，可考虑添加镜像源,以下示例[pip清华源](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
 
-9.大功告成！
+```pip清华源
+pip config set global.index-url https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple
+```
+
+3.在仓库目录打开cmd，输入以下内容进行安装
+
+```命令提示符(?)
+pdm install
+```
+
+4.安装完毕后，输入
+
+```命令提示符(?)
+pdm run bot.py
+```
+
+就可以成功启动机器人，然后根据自身情况配置env.prod
 
 ## 指令
-`getqr` 默认`qrhelper_command`指令
+
+`/getqr` 默认`qrhelper_command`指令
 
 必须填写`qrhelper_admin`才能拥有权限使用此指令
 
 必须填写`command_start`才能响应此命令
 
-指令示例`#getqr 1`
+指令示例`#getqr 1`(只输入/getqr会报错)
 
 **~~我承认我(LeiSureLy)MarkDown写的很烂，见谅！！！~~**(README modified by [chun-awa](https://github.com/chun-awa))
 
 ## LICENSE
-This repository is licensed under [MIT License](https://github.com/This-is-XiaoDeng/nonebot-plugin-maimai-qrhelper/blob/main/LICENSE).
+此仓库遵循 [MIT License](https://github.com/This-is-XiaoDeng/nonebot-plugin-maimai-qrhelper/blob/main/LICENSE).

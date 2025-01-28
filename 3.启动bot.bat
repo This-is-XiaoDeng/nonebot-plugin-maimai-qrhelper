@@ -1,0 +1,1 @@
+pdm run bot.py
